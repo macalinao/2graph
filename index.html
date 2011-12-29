@@ -85,7 +85,7 @@ $(function(){
     $('#gform').submit(function(e){
         makeGraph(
             $("input#calc").val(),
-            50
+             $("input#vals").val()
         );
         return false;
     });
@@ -97,8 +97,10 @@ $(function(){
 <body>
 
 <form id="gform">
-<input type="text" id="calc" name="calc" />
-<input type="submit" id="docalc" name="docalc" value="Calculate!" />
+Formula: <input type="text" id="calc" />
+&nbsp;
+Max values: <input type="text" id="vals" />
+<input type="submit" id="docalc" value="Calculate!" />
 </form>
 
 <div id="graph" style="height:100%; width:100%;"></div>
